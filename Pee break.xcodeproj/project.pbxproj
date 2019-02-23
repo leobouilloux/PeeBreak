@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B35527E82220A3DF00CE903F /* TabbarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527E72220A3DF00CE903F /* TabbarFactory.swift */; };
+		B35527EA2220A40F00CE903F /* TabbarFactoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527E92220A40F00CE903F /* TabbarFactoryInterface.swift */; };
+		B35527EF2220A4FC00CE903F /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527EE2220A4FC00CE903F /* FavoritesCoordinator.swift */; };
+		B35527F12220A54B00CE903F /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527F02220A54B00CE903F /* FavoritesViewModel.swift */; };
+		B35527F42220A55B00CE903F /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527F22220A55B00CE903F /* FavoritesController.swift */; };
+		B35527F52220A55B00CE903F /* FavoritesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35527F32220A55B00CE903F /* FavoritesController.xib */; };
+		B35527F72220A58500CE903F /* FavoritesViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527F62220A58500CE903F /* FavoritesViewModelInterface.swift */; };
+		B35527FA2220A93100CE903F /* FavoritesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527F92220A93100CE903F /* FavoritesFactory.swift */; };
+		B35527FC2220A96600CE903F /* FavoritesFactoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527FB2220A96600CE903F /* FavoritesFactoryInterface.swift */; };
+		B35527FE2220A9B300CE903F /* FavoritesCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527FD2220A9B300CE903F /* FavoritesCoordinatorOutput.swift */; };
+		B35528002220AA3C00CE903F /* FavoritesCoordinatorOutputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527FF2220AA3C00CE903F /* FavoritesCoordinatorOutputInterface.swift */; };
+		B35528022220AC5F00CE903F /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35528012220AC5F00CE903F /* Provider.swift */; };
+		B35528042220AECC00CE903F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35528032220AECC00CE903F /* RealmManager.swift */; };
+		B35528062220AEDD00CE903F /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35528052220AEDD00CE903F /* RequestManager.swift */; };
+		B35528082220C9A000CE903F /* FavoritesCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35528072220C9A000CE903F /* FavoritesCoordinatorFactory.swift */; };
+		B355280B2220CA8600CE903F /* ToiletsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B355280A2220CA8600CE903F /* ToiletsFactory.swift */; };
+		B355280D2220CAC300CE903F /* ToiletsFactoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B355280C2220CAC300CE903F /* ToiletsFactoryInterface.swift */; };
+		B355280F2220CAD600CE903F /* ToiletsCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B355280E2220CAD600CE903F /* ToiletsCoordinatorFactory.swift */; };
+		B35528112220CAF000CE903F /* ToiletsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35528102220CAF000CE903F /* ToiletsCoordinator.swift */; };
+		B35528132220CC1B00CE903F /* ToiletsCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35528122220CC1B00CE903F /* ToiletsCoordinatorOutput.swift */; };
+		B35528152220CC2600CE903F /* ToiletsCoordinatorOutputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35528142220CC2600CE903F /* ToiletsCoordinatorOutputInterface.swift */; };
+		B35528172220CE4600CE903F /* DefaultProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35528162220CE4600CE903F /* DefaultProvider.swift */; };
+		B355281A2220D86600CE903F /* ToiletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35528192220D86600CE903F /* ToiletData.swift */; };
+		B37E1EE02220825B0043A976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E1EDF2220825B0043A976 /* AppDelegate.swift */; };
+		B37E1EE72220825C0043A976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37E1EE62220825C0043A976 /* Assets.xcassets */; };
+		B37E1EEA2220825C0043A976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E1EE82220825C0043A976 /* LaunchScreen.storyboard */; };
+		B386DF852220DA87007AC448 /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386DF842220DA87007AC448 /* RealmProvider.swift */; };
+		B3FA45BF2220856400DCC480 /* ToiletsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45BD2220856400DCC480 /* ToiletsController.swift */; };
+		B3FA45C02220856400DCC480 /* ToiletsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3FA45BE2220856400DCC480 /* ToiletsController.xib */; };
+		B3FA45C22220857A00DCC480 /* ToiletsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45C12220857A00DCC480 /* ToiletsViewModel.swift */; };
+		B3FA45C42220858F00DCC480 /* ToiletsViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45C32220858F00DCC480 /* ToiletsViewModelInterface.swift */; };
+		B3FA45C8222088F800DCC480 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45C7222088F800DCC480 /* BaseViewController.swift */; };
+		B3FA45CA2220891D00DCC480 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45C92220891D00DCC480 /* RxViewController.swift */; };
+		B3FA45CC22208A0100DCC480 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45CB22208A0100DCC480 /* Theme.swift */; };
+		B3FA45D222208EC700DCC480 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45D122208EC700DCC480 /* NSObjectExtension.swift */; };
+		B3FA45D422208EE900DCC480 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45D322208EE900DCC480 /* CoordinatorFactory.swift */; };
+		B3FA45D622208F2300DCC480 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45D522208F2300DCC480 /* BaseCoordinator.swift */; };
+		B3FA45D822208F4300DCC480 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45D722208F4300DCC480 /* Coordinator.swift */; };
+		B3FA45DA22208F6C00DCC480 /* DeeplinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45D922208F6C00DCC480 /* DeeplinkOption.swift */; };
+		B3FA45DC22208FD900DCC480 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45DB22208FD900DCC480 /* Presentable.swift */; };
+		B3FA45DE22208FF800DCC480 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45DD22208FF800DCC480 /* Router.swift */; };
+		B3FA45E02220901700DCC480 /* RouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45DF2220901700DCC480 /* RouterImp.swift */; };
+		B3FA45E22220905400DCC480 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45E12220905400DCC480 /* ApplicationCoordinator.swift */; };
+		B3FA45E52220945F00DCC480 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45E42220945F00DCC480 /* TabbarController.swift */; };
+		B3FA45EB2220990A00DCC480 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45EA2220990A00DCC480 /* Assets.swift */; };
+		B3FA45ED22209AA200DCC480 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45EC22209AA200DCC480 /* TabbarCoordinator.swift */; };
+		BC9463A9BC82F9BE35543731 /* Pods_Pee_break.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1C8E729C085CF02362368A /* Pods_Pee_break.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		929B32A29B4AB36B8CBB28E4 /* Pods-Pee break.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pee break.debug.xcconfig"; path = "Target Support Files/Pods-Pee break/Pods-Pee break.debug.xcconfig"; sourceTree = "<group>"; };
+		B35527E72220A3DF00CE903F /* TabbarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarFactory.swift; sourceTree = "<group>"; };
+		B35527E92220A40F00CE903F /* TabbarFactoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarFactoryInterface.swift; sourceTree = "<group>"; };
+		B35527EE2220A4FC00CE903F /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
+		B35527F02220A54B00CE903F /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		B35527F22220A55B00CE903F /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
+		B35527F32220A55B00CE903F /* FavoritesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesController.xib; sourceTree = "<group>"; };
+		B35527F62220A58500CE903F /* FavoritesViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModelInterface.swift; sourceTree = "<group>"; };
+		B35527F92220A93100CE903F /* FavoritesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesFactory.swift; sourceTree = "<group>"; };
+		B35527FB2220A96600CE903F /* FavoritesFactoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesFactoryInterface.swift; sourceTree = "<group>"; };
+		B35527FD2220A9B300CE903F /* FavoritesCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorOutput.swift; sourceTree = "<group>"; };
+		B35527FF2220AA3C00CE903F /* FavoritesCoordinatorOutputInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorOutputInterface.swift; sourceTree = "<group>"; };
+		B35528012220AC5F00CE903F /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		B35528032220AECC00CE903F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B35528052220AEDD00CE903F /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		B35528072220C9A000CE903F /* FavoritesCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinatorFactory.swift; sourceTree = "<group>"; };
+		B355280A2220CA8600CE903F /* ToiletsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsFactory.swift; sourceTree = "<group>"; };
+		B355280C2220CAC300CE903F /* ToiletsFactoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsFactoryInterface.swift; sourceTree = "<group>"; };
+		B355280E2220CAD600CE903F /* ToiletsCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsCoordinatorFactory.swift; sourceTree = "<group>"; };
+		B35528102220CAF000CE903F /* ToiletsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsCoordinator.swift; sourceTree = "<group>"; };
+		B35528122220CC1B00CE903F /* ToiletsCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsCoordinatorOutput.swift; sourceTree = "<group>"; };
+		B35528142220CC2600CE903F /* ToiletsCoordinatorOutputInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsCoordinatorOutputInterface.swift; sourceTree = "<group>"; };
+		B35528162220CE4600CE903F /* DefaultProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultProvider.swift; sourceTree = "<group>"; };
+		B35528192220D86600CE903F /* ToiletData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletData.swift; sourceTree = "<group>"; };
+		B37E1EDC2220825B0043A976 /* Pee break.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pee break.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37E1EDF2220825B0043A976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B37E1EE62220825C0043A976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B37E1EE92220825C0043A976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B37E1EEB2220825C0043A976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B386DF842220DA87007AC448 /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		B3FA45BD2220856400DCC480 /* ToiletsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsController.swift; sourceTree = "<group>"; };
+		B3FA45BE2220856400DCC480 /* ToiletsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletsController.xib; sourceTree = "<group>"; };
+		B3FA45C12220857A00DCC480 /* ToiletsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsViewModel.swift; sourceTree = "<group>"; };
+		B3FA45C32220858F00DCC480 /* ToiletsViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsViewModelInterface.swift; sourceTree = "<group>"; };
+		B3FA45C7222088F800DCC480 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B3FA45C92220891D00DCC480 /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
+		B3FA45CB22208A0100DCC480 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B3FA45D122208EC700DCC480 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		B3FA45D322208EE900DCC480 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		B3FA45D522208F2300DCC480 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		B3FA45D722208F4300DCC480 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B3FA45D922208F6C00DCC480 /* DeeplinkOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkOption.swift; sourceTree = "<group>"; };
+		B3FA45DB22208FD900DCC480 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		B3FA45DD22208FF800DCC480 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B3FA45DF2220901700DCC480 /* RouterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterImp.swift; sourceTree = "<group>"; };
+		B3FA45E12220905400DCC480 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		B3FA45E42220945F00DCC480 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		B3FA45EA2220990A00DCC480 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		B3FA45EC22209AA200DCC480 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
+		E158B3520B42474313112707 /* Pods-Pee break.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pee break.release.xcconfig"; path = "Target Support Files/Pods-Pee break/Pods-Pee break.release.xcconfig"; sourceTree = "<group>"; };
+		FE1C8E729C085CF02362368A /* Pods_Pee_break.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pee_break.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B37E1ED92220825B0043A976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9463A9BC82F9BE35543731 /* Pods_Pee_break.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B88DBB5E6F4F7278928FAD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				929B32A29B4AB36B8CBB28E4 /* Pods-Pee break.debug.xcconfig */,
+				E158B3520B42474313112707 /* Pods-Pee break.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A7A8A18DEBDF9E9F05843EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE1C8E729C085CF02362368A /* Pods_Pee_break.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B35527EB2220A44600CE903F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B35527E72220A3DF00CE903F /* TabbarFactory.swift */,
+				B35527E92220A40F00CE903F /* TabbarFactoryInterface.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B35527EC2220A4A000CE903F /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA45E32220938D00DCC480 /* TabbarCoordinator */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		B35527ED2220A4B500CE903F /* FavoritesFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B35527F82220A91F00CE903F /* Factory */,
+				B35527EE2220A4FC00CE903F /* FavoritesCoordinator.swift */,
+				B35527F02220A54B00CE903F /* FavoritesViewModel.swift */,
+				B35527F22220A55B00CE903F /* FavoritesController.swift */,
+				B35527F32220A55B00CE903F /* FavoritesController.xib */,
+				B35527FF2220AA3C00CE903F /* FavoritesCoordinatorOutputInterface.swift */,
+				B35527F62220A58500CE903F /* FavoritesViewModelInterface.swift */,
+				B35527FD2220A9B300CE903F /* FavoritesCoordinatorOutput.swift */,
+			);
+			path = FavoritesFlow;
+			sourceTree = "<group>";
+		};
+		B35527F82220A91F00CE903F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B35527F92220A93100CE903F /* FavoritesFactory.swift */,
+				B35527FB2220A96600CE903F /* FavoritesFactoryInterface.swift */,
+				B35528072220C9A000CE903F /* FavoritesCoordinatorFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B35528092220CA7300CE903F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B355280A2220CA8600CE903F /* ToiletsFactory.swift */,
+				B355280C2220CAC300CE903F /* ToiletsFactoryInterface.swift */,
+				B355280E2220CAD600CE903F /* ToiletsCoordinatorFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		B35528182220D84E00CE903F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B35528192220D86600CE903F /* ToiletData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B37E1ED32220825B0043A976 = {
+			isa = PBXGroup;
+			children = (
+				B3FA45EE22209F1500DCC480 /* Network */,
+				B3FA45E72220973300DCC480 /* Resources */,
+				B3FA45C5222088B800DCC480 /* Tools */,
+				B37E1EDE2220825B0043A976 /* Pee break */,
+				B37E1EDD2220825B0043A976 /* Products */,
+				8B88DBB5E6F4F7278928FAD1 /* Pods */,
+				9A7A8A18DEBDF9E9F05843EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B37E1EDD2220825B0043A976 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B37E1EDC2220825B0043A976 /* Pee break.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B37E1EDE2220825B0043A976 /* Pee break */ = {
+			isa = PBXGroup;
+			children = (
+				B35527ED2220A4B500CE903F /* FavoritesFlow */,
+				B35527EC2220A4A000CE903F /* MainFlow */,
+				B3FA45BC2220854200DCC480 /* ToiletsFlow */,
+				B37E1EDF2220825B0043A976 /* AppDelegate.swift */,
+				B37E1EE82220825C0043A976 /* LaunchScreen.storyboard */,
+				B37E1EEB2220825C0043A976 /* Info.plist */,
+				B3FA45E12220905400DCC480 /* ApplicationCoordinator.swift */,
+			);
+			path = "Pee break";
+			sourceTree = "<group>";
+		};
+		B3FA45BC2220854200DCC480 /* ToiletsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B35528092220CA7300CE903F /* Factory */,
+				B3FA45BD2220856400DCC480 /* ToiletsController.swift */,
+				B3FA45BE2220856400DCC480 /* ToiletsController.xib */,
+				B3FA45C12220857A00DCC480 /* ToiletsViewModel.swift */,
+				B3FA45C32220858F00DCC480 /* ToiletsViewModelInterface.swift */,
+				B35528102220CAF000CE903F /* ToiletsCoordinator.swift */,
+				B35528122220CC1B00CE903F /* ToiletsCoordinatorOutput.swift */,
+				B35528142220CC2600CE903F /* ToiletsCoordinatorOutputInterface.swift */,
+			);
+			path = ToiletsFlow;
+			sourceTree = "<group>";
+		};
+		B3FA45C5222088B800DCC480 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA45CE22208D9500DCC480 /* Coordinators */,
+				B3FA45C6222088C100DCC480 /* Utils */,
+				B3FA45CB22208A0100DCC480 /* Theme.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B3FA45C6222088C100DCC480 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA45C7222088F800DCC480 /* BaseViewController.swift */,
+				B3FA45C92220891D00DCC480 /* RxViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B3FA45CE22208D9500DCC480 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA45D122208EC700DCC480 /* NSObjectExtension.swift */,
+				B3FA45D322208EE900DCC480 /* CoordinatorFactory.swift */,
+				B3FA45D522208F2300DCC480 /* BaseCoordinator.swift */,
+				B3FA45D722208F4300DCC480 /* Coordinator.swift */,
+				B3FA45D922208F6C00DCC480 /* DeeplinkOption.swift */,
+				B3FA45DB22208FD900DCC480 /* Presentable.swift */,
+				B3FA45DD22208FF800DCC480 /* Router.swift */,
+				B3FA45DF2220901700DCC480 /* RouterImp.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		B3FA45E32220938D00DCC480 /* TabbarCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B35527EB2220A44600CE903F /* Factory */,
+				B3FA45E42220945F00DCC480 /* TabbarController.swift */,
+				B3FA45EC22209AA200DCC480 /* TabbarCoordinator.swift */,
+			);
+			path = TabbarCoordinator;
+			sourceTree = "<group>";
+		};
+		B3FA45E72220973300DCC480 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3FA45EA2220990A00DCC480 /* Assets.swift */,
+				B37E1EE62220825C0043A976 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B3FA45EE22209F1500DCC480 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B35528182220D84E00CE903F /* Model */,
+				B35528012220AC5F00CE903F /* Provider.swift */,
+				B35528032220AECC00CE903F /* RealmManager.swift */,
+				B35528052220AEDD00CE903F /* RequestManager.swift */,
+				B35528162220CE4600CE903F /* DefaultProvider.swift */,
+				B386DF842220DA87007AC448 /* RealmProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B37E1EDB2220825B0043A976 /* Pee break */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37E1EEE2220825C0043A976 /* Build configuration list for PBXNativeTarget "Pee break" */;
+			buildPhases = (
+				8384BCB81401CF80DB267E5F /* [CP] Check Pods Manifest.lock */,
+				B3FA45E62220968700DCC480 /* SwiftGen */,
+				B3FA45CD22208B4A00DCC480 /* SwiftLint */,
+				B37E1ED82220825B0043A976 /* Sources */,
+				B37E1ED92220825B0043A976 /* Frameworks */,
+				B37E1EDA2220825B0043A976 /* Resources */,
+				F0856930D366BDEBD69ED5FC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pee break";
+			productName = "Pee break";
+			productReference = B37E1EDC2220825B0043A976 /* Pee break.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B37E1ED42220825B0043A976 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Leo Marcotte";
+				TargetAttributes = {
+					B37E1EDB2220825B0043A976 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = B37E1ED72220825B0043A976 /* Build configuration list for PBXProject "Pee break" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B37E1ED32220825B0043A976;
+			productRefGroup = B37E1EDD2220825B0043A976 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B37E1EDB2220825B0043A976 /* Pee break */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B37E1EDA2220825B0043A976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37E1EEA2220825C0043A976 /* LaunchScreen.storyboard in Resources */,
+				B37E1EE72220825C0043A976 /* Assets.xcassets in Resources */,
+				B3FA45C02220856400DCC480 /* ToiletsController.xib in Resources */,
+				B35527F52220A55B00CE903F /* FavoritesController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8384BCB81401CF80DB267E5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pee break-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3FA45CD22208B4A00DCC480 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Pods/SwiftLint/swiftlint autocorrect\n./Pods/SwiftLint/swiftlint\n";
+		};
+		B3FA45E62220968700DCC480 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Pods/SwiftGen/bin/swiftgen\n";
+		};
+		F0856930D366BDEBD69ED5FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pee break/Pods-Pee break-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTheme/RxTheme.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pee break/Pods-Pee break-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B37E1ED82220825B0043A976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FA45DA22208F6C00DCC480 /* DeeplinkOption.swift in Sources */,
+				B3FA45C8222088F800DCC480 /* BaseViewController.swift in Sources */,
+				B3FA45EB2220990A00DCC480 /* Assets.swift in Sources */,
+				B355280D2220CAC300CE903F /* ToiletsFactoryInterface.swift in Sources */,
+				B3FA45C22220857A00DCC480 /* ToiletsViewModel.swift in Sources */,
+				B35527EF2220A4FC00CE903F /* FavoritesCoordinator.swift in Sources */,
+				B3FA45E02220901700DCC480 /* RouterImp.swift in Sources */,
+				B35528022220AC5F00CE903F /* Provider.swift in Sources */,
+				B3FA45CA2220891D00DCC480 /* RxViewController.swift in Sources */,
+				B35528152220CC2600CE903F /* ToiletsCoordinatorOutputInterface.swift in Sources */,
+				B3FA45BF2220856400DCC480 /* ToiletsController.swift in Sources */,
+				B355280F2220CAD600CE903F /* ToiletsCoordinatorFactory.swift in Sources */,
+				B37E1EE02220825B0043A976 /* AppDelegate.swift in Sources */,
+				B35528082220C9A000CE903F /* FavoritesCoordinatorFactory.swift in Sources */,
+				B3FA45D622208F2300DCC480 /* BaseCoordinator.swift in Sources */,
+				B35527F42220A55B00CE903F /* FavoritesController.swift in Sources */,
+				B3FA45D822208F4300DCC480 /* Coordinator.swift in Sources */,
+				B35527F12220A54B00CE903F /* FavoritesViewModel.swift in Sources */,
+				B3FA45C42220858F00DCC480 /* ToiletsViewModelInterface.swift in Sources */,
+				B3FA45D422208EE900DCC480 /* CoordinatorFactory.swift in Sources */,
+				B35527FE2220A9B300CE903F /* FavoritesCoordinatorOutput.swift in Sources */,
+				B3FA45DE22208FF800DCC480 /* Router.swift in Sources */,
+				B3FA45DC22208FD900DCC480 /* Presentable.swift in Sources */,
+				B3FA45CC22208A0100DCC480 /* Theme.swift in Sources */,
+				B355280B2220CA8600CE903F /* ToiletsFactory.swift in Sources */,
+				B35527E82220A3DF00CE903F /* TabbarFactory.swift in Sources */,
+				B35528042220AECC00CE903F /* RealmManager.swift in Sources */,
+				B3FA45D222208EC700DCC480 /* NSObjectExtension.swift in Sources */,
+				B35528062220AEDD00CE903F /* RequestManager.swift in Sources */,
+				B35527FC2220A96600CE903F /* FavoritesFactoryInterface.swift in Sources */,
+				B3FA45E22220905400DCC480 /* ApplicationCoordinator.swift in Sources */,
+				B35528132220CC1B00CE903F /* ToiletsCoordinatorOutput.swift in Sources */,
+				B35528172220CE4600CE903F /* DefaultProvider.swift in Sources */,
+				B35527EA2220A40F00CE903F /* TabbarFactoryInterface.swift in Sources */,
+				B355281A2220D86600CE903F /* ToiletData.swift in Sources */,
+				B35527F72220A58500CE903F /* FavoritesViewModelInterface.swift in Sources */,
+				B3FA45ED22209AA200DCC480 /* TabbarCoordinator.swift in Sources */,
+				B35528112220CAF000CE903F /* ToiletsCoordinator.swift in Sources */,
+				B386DF852220DA87007AC448 /* RealmProvider.swift in Sources */,
+				B3FA45E52220945F00DCC480 /* TabbarController.swift in Sources */,
+				B35528002220AA3C00CE903F /* FavoritesCoordinatorOutputInterface.swift in Sources */,
+				B35527FA2220A93100CE903F /* FavoritesFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B37E1EE82220825C0043A976 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B37E1EE92220825C0043A976 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B37E1EEC2220825C0043A976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B37E1EED2220825C0043A976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B37E1EEF2220825C0043A976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 929B32A29B4AB36B8CBB28E4 /* Pods-Pee break.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7J8GPSDG34;
+				INFOPLIST_FILE = "Pee break/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leomarcotte.Pee-break";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B37E1EF02220825C0043A976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E158B3520B42474313112707 /* Pods-Pee break.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7J8GPSDG34;
+				INFOPLIST_FILE = "Pee break/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leomarcotte.Pee-break";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B37E1ED72220825B0043A976 /* Build configuration list for PBXProject "Pee break" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37E1EEC2220825C0043A976 /* Debug */,
+				B37E1EED2220825C0043A976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37E1EEE2220825C0043A976 /* Build configuration list for PBXNativeTarget "Pee break" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37E1EEF2220825C0043A976 /* Debug */,
+				B37E1EF02220825C0043A976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B37E1ED42220825B0043A976 /* Project object */;
+}

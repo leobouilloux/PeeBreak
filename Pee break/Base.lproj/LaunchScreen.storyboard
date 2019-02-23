@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen" translatesAutoresizingMaskIntoConstraints="NO" id="DVY-yY-yTU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHz-Jw-GyQ">
+                                <rect key="frame" x="0.0" y="-24" width="414" height="760"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A test project for Side" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHI-01-3LK">
+                                <rect key="frame" x="20" y="596" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Leo Marcotte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ra-UM-KxB">
+                                <rect key="frame" x="20" y="627" width="374" height="16"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pee break" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nC3-rq-5Wj">
+                                <rect key="frame" x="20" y="86" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Ra-UM-KxB" secondAttribute="bottom" constant="93" id="0iB-ky-WnW"/>
+                            <constraint firstItem="nC3-rq-5Wj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6i4-ga-jxS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="gHz-Jw-GyQ" secondAttribute="top" constant="44" id="6y4-nl-mvU"/>
+                            <constraint firstItem="DVY-yY-yTU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="838-8s-bFc"/>
+                            <constraint firstItem="2Ra-UM-KxB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DOn-yk-GGG"/>
+                            <constraint firstAttribute="top" secondItem="DVY-yY-yTU" secondAttribute="top" id="FiC-x8-uFM"/>
+                            <constraint firstItem="gHz-Jw-GyQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gew-GZ-KKG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gHz-Jw-GyQ" secondAttribute="trailing" id="Mba-du-bXG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nC3-rq-5Wj" secondAttribute="trailing" constant="20" id="RP4-jE-knE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Ra-UM-KxB" secondAttribute="trailing" constant="20" id="brO-ta-SdR"/>
+                            <constraint firstAttribute="bottom" secondItem="DVY-yY-yTU" secondAttribute="bottom" id="ccf-z9-9zd"/>
+                            <constraint firstItem="2Ra-UM-KxB" firstAttribute="top" secondItem="rHI-01-3LK" secondAttribute="bottom" constant="10" id="jGl-zd-lZQ"/>
+                            <constraint firstAttribute="bottom" secondItem="gHz-Jw-GyQ" secondAttribute="bottom" id="ltx-h9-ErT"/>
+                            <constraint firstItem="rHI-01-3LK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nK3-Jf-xuE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DVY-yY-yTU" secondAttribute="trailing" id="svn-HF-IlQ"/>
+                            <constraint firstItem="nC3-rq-5Wj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="te8-LM-1mO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rHI-01-3LK" secondAttribute="trailing" constant="20" id="xW5-CW-rxS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354.39999999999998" y="256.82158920539734"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashscreen" width="1868" height="2802"/>
+    </resources>
+</document>

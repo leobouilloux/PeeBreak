@@ -1,0 +1,75 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - plist
+
+trailing_whitespace:
+  severity: error
+vertical_whitespace:
+  severity: error
+
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+line_length: 140
+type_body_length:
+  - 300 # warning
+  - 400 # error
+file_length:
+  warning: 500
+  error: 1200
+type_name:
+  min_length: 2 # only warning
+  max_length: # warning and error
+  warning: 40
+  error: 50
+  excluded: # excluded via string
+    - iPhone
+    - Session
+identifier_name:
+  min_length: 2 # only min_length
+  error: 4 # only error
+  excluded: # excluded via string array
+    - id
+    - vc
+    - x
+    - y
+    - e
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit)
+
+opt_in_rules:
+  - anyobject_protocol
+  - contains_over_first_not_nil
+  - convenience_type
+  - closure_body_length
+  - closure_spacing
+  - collection_alignment
+  - discouraged_object_literal
+  - discouraged_optional_boolean
+  - empty_count
+  - empty_string
+  - explicit_init
+  - fallthrough
+  - fatal_error_message
+  - first_where
+  - force_unwrapping
+  - function_default_parameter_at_end
+  - identical_operands
+  - implicit_return
+  - legacy_random
+  - let_var_whitespace
+  - literal_expression_end_indentation
+  - modifier_order
+  - multiline_function_chains
+  - operator_usage_whitespace
+  - overridden_super_call
+  - pattern_matching_keywords
+  - private_action
+  - private_outlet
+  - redundant_type_annotation
+  - sorted_first_last
+  - sorted_imports
+  - toggle_bool
+  - unneeded_parentheses_in_closure_argument
+  - unused_import
+  - yoda_condition
