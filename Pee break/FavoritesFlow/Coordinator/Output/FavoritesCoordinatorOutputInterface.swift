@@ -8,7 +8,7 @@
 
 import RxCocoa
 
-public protocol FavoritesCoordinatorOutputInterface {
+protocol FavoritesCoordinatorOutputInterface {
     var toiletsAction: PublishRelay<Void> { get }
-    var detailsAction: PublishRelay<Void> { get }
+    var detailsAction: PublishRelay<ToiletData> { get }
 }

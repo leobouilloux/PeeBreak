@@ -10,7 +10,14 @@ import RealmSwift
 
 final class ToiletData: Object {
     @objc dynamic var id: String = ""
-    @objc dynamic var isFavorite: Bool = false
-    @objc dynamic var name: String = ""
     @objc dynamic var address: String = ""
+    @objc dynamic var hours: String = ""
+    @objc dynamic var x: Double = 0
+    @objc dynamic var y: Double = 0
+
+    @objc dynamic var isFavorite: Bool = false
+
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

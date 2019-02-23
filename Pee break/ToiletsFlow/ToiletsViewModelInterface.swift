@@ -9,5 +9,5 @@
 import RxCocoa
 
 protocol ToiletsViewModelInterface {
-
+    var dataSource: Driver<[ToiletsCellType]> { get }
 }

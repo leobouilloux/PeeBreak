@@ -9,6 +9,7 @@
 import RxSwift
 
 protocol RealmProvider {
+    func updateData()
     func getToilets() -> Observable<[ToiletData]>
     func getFavorites() -> Observable<[ToiletData]>
 }

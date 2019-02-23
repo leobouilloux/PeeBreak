@@ -6,9 +6,10 @@
 //  Copyright © 2019 Leo Marcotte. All rights reserved.
 //
 
-public final class FavoritesCoordinator: BaseCoordinator {
+final class FavoritesCoordinator: BaseCoordinator {
+    let output: FavoritesCoordinatorOutputInterface
+
     private let factory: FavoritesFactoryInterface
-    public let output: FavoritesCoordinatorOutputInterface
     private let coordinatorFactory: CoordinatorFactory
     private let provider: Provider
 

@@ -6,9 +6,10 @@ inhibit_all_warnings!
 def pods
     pod 'Alamofire'
     pod 'RealmSwift'
-    pod 'RxSwift', '~> 4.0'
+    pod 'RxAlamofire'
     pod 'RxCocoa', '~> 4.0'
     pod 'RxRealm'
+    pod 'RxSwift', '~> 4.0'
     pod 'RxTheme', '~> 3.0'
     pod 'SwiftGen', '~> 6.0'
     pod 'SwiftLint'
