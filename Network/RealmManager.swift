@@ -21,9 +21,10 @@ final class RealmManager: RealmProvider {
         self.realm = realm
     }
 
-    func updateData() {
-        requestManger.fetchToilets()
-            .debug()
+    func updateData() -> Observable<(HTTPURLResponse, Any)> {
+        let request = requestManger.fetchToilets()
+
+        request
             .subscribe(onNext: { [weak self] _, json in
                 if let toiletsData = self?.parseToiletsData(data: json) {
                     self?.saveToiletsData(data: toiletsData)
@@ -32,7 +33,7 @@ final class RealmManager: RealmProvider {
                 print(error.localizedDescription)
             })
             .disposed(by: bag)
-
+        return request
     }
 
     func getToilets() -> Observable<[ToiletData]> {

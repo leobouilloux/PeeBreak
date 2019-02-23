@@ -6,4 +6,8 @@
 //  Copyright © 2019 Leo Marcotte. All rights reserved.
 //
 
-import Foundation
+import RxCocoa
+
+protocol ToiletsOutputInterface {
+    var updateDataAction: PublishRelay<Void> { get }
+}

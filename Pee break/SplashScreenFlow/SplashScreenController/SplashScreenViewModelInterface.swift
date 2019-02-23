@@ -12,4 +12,6 @@ protocol SplashScreenViewModelInterface {
     var backgroundImage: BehaviorRelay<UIImage> { get }
     var isLoading: PublishRelay<Bool> { get }
     var output: SplashScreenOutputInterface { get }
+
+    func fetchData()
 }

@@ -29,3 +29,15 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
+
+extension UIWindow {
+    override open func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            if themeService.type == .light {
+                themeService.switch(.dark)
+            } else {
+                themeService.switch(.light)
+            }
+        }
+    }
+}

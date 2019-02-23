@@ -12,7 +12,6 @@ final class ApplicationCoordinator: Coordinator {
     var window: UIWindow
     var childCoordinators = [Coordinator]()
     private let coordinatorFactory: CoordinatorFactory
-    private var lazyDeeplink: DeepLinkOption?
     private let provider: Provider
 
     private let bag = DisposeBag()
@@ -29,19 +28,29 @@ final class ApplicationCoordinator: Coordinator {
             default: childCoordinators.forEach { $0.start(with: option) }
             }
         } else {
-            lazyDeeplink = option
-            runMainFlow()
+            runSplashScreenFlow()
         }
     }
 
-    private func runMainFlow(with deeplinkOption: DeepLinkOption? = nil) {
+    private func runSplashScreenFlow(with option: DeepLinkOption? = nil) {
+        let coordinator = coordinatorFactory.makeSplashScreenCoordinator(with: provider)
+        coordinator.output.finishFlowAction
+            .subscribe(onNext: { [weak self, weak coordinator] _ in
+                self?.removeDependency(coordinator)
+                self?.runMainFlow()
+            })
+            .disposed(by: bag)
+        addDependency(coordinator)
+        coordinator.start(with: option)
+
+        window.rootViewController = coordinator.router.toPresent()
+    }
+
+    private func runMainFlow(with option: DeepLinkOption? = nil) {
         let coordinator = TabbarFactory().makeTabbarCoordinator(provider: provider)
         addDependency(coordinator)
-        coordinator.start(with: deeplinkOption)
+        coordinator.start(with: option)
 
         window.rootViewController = coordinator.tabbarRouter.toPresent()
-        if let lazyDeeplink = lazyDeeplink {
-            start(with: lazyDeeplink)
-        }
     }
 }

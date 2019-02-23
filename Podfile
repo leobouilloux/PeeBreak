@@ -8,6 +8,7 @@ def pods
     pod 'RealmSwift'
     pod 'RxAlamofire'
     pod 'RxCocoa', '~> 4.0'
+    pod 'RxMKMapView'
     pod 'RxRealm'
     pod 'RxSwift', '~> 4.0'
     pod 'RxTheme', '~> 3.0'

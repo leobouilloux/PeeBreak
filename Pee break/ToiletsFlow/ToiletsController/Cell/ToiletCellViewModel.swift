@@ -12,8 +12,7 @@ import RxSwift
 final class ToiletCellViewModel: ToiletCellViewModelInterface {
     let address: BehaviorRelay<String>
     let hours: BehaviorRelay<String>
-    let lattitude: BehaviorRelay<Double>
-    let longitude: BehaviorRelay<Double>
+    let distance = BehaviorRelay<String>(value: "NaN")
     let favoriteImage = BehaviorRelay<UIImage>(value: UIImage())
 
     private let isFavorite: BehaviorRelay<Bool>
@@ -21,10 +20,19 @@ final class ToiletCellViewModel: ToiletCellViewModelInterface {
 
     init(with data: ToiletData) {
         self.address = BehaviorRelay<String>(value: data.address)
-        self.hours = BehaviorRelay<String>(value: data.hours)
-        self.longitude = BehaviorRelay<Double>(value: data.x)
-        self.lattitude = BehaviorRelay<Double>(value: data.y)
+
+        let formattedHours = " \(data.hours.replacingOccurrences(of: " ", with: "")) "
+        self.hours = BehaviorRelay<String>(value: formattedHours)
+
         self.isFavorite = BehaviorRelay<Bool>(value: data.isFavorite)
+
+        if let distance = data.distance.value {
+            if Int(distance) / 1000 == 0 {
+                self.distance.accept(String(format: "%.0fm", distance))
+            } else {
+                self.distance.accept(String(format: "%.1fkm", distance / 1000))
+            }
+        }
 
         setupRxBindings()
     }

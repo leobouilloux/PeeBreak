@@ -6,11 +6,14 @@
 //  Copyright © 2019 Leo Marcotte. All rights reserved.
 //
 
+import RxSwift
+
 public final class SplashScreenCoordinator: BaseCoordinator {
     private let factory: SplashScreenFactoryInterface
     public let output: SplashScreenCoordinatorOutput
     private let coordinatorFactory: CoordinatorFactory
     private let provider: Provider
+    private let bag = DisposeBag()
 
     init(router: Router, factory: SplashScreenFactoryInterface, coordinatorFactory: CoordinatorFactory, provider: Provider) {
         self.factory = factory
@@ -28,6 +31,7 @@ public final class SplashScreenCoordinator: BaseCoordinator {
 private extension SplashScreenCoordinator {
     func setupRoot() {
         let viewModel = SplashScreenViewModel(with: provider)
+        viewModel.output.finishFlowAction.bind(to: output.finishFlowAction).disposed(by: bag)
         let splashScreenPresentable = factory.makeSplashScreenPresentable(with: viewModel)
         router.setRootModule(splashScreenPresentable)
     }

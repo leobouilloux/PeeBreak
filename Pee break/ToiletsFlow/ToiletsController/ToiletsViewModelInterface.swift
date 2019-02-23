@@ -6,8 +6,14 @@
 //  Copyright © 2019 Leo Marcotte. All rights reserved.
 //
 
+import CoreLocation
+import MapKit
 import RxCocoa
 
 protocol ToiletsViewModelInterface {
     var dataSource: Driver<[ToiletsCellType]> { get }
+    var annotations: Driver<[MKPointAnnotation]> { get }
+    var userLocation: BehaviorRelay<CLLocation?> { get }
+    var isLoading: PublishRelay<Bool> { get }
+    var output: ToiletsOutputInterface { get }
 }

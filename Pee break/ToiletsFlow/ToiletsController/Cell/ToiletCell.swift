@@ -14,13 +14,15 @@ final class ToiletCell: RxTableViewCell {
     @IBOutlet private weak var addressLabel: UILabel!
     @IBOutlet private weak var hoursLabel: UILabel!
     @IBOutlet private weak var favoriteImageView: UIImageView!
+    @IBOutlet private weak var roundView: UIView!
+    @IBOutlet private weak var distanceLabel: UILabel!
 
     var viewModel: ToiletCellViewModelInterface?
 
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        selectionStyle = .none
+        setupView()
     }
 
     func setup(with viewModel: ToiletCellViewModelInterface) {
@@ -31,10 +33,32 @@ final class ToiletCell: RxTableViewCell {
 }
 
 private extension ToiletCell {
+    // *****************************************************************************
+    // - MARK: View
+    func setupView() {
+        selectionStyle = .none
+
+        setupRoundView()
+        setupHoursLabel()
+    }
+
+    func setupRoundView() {
+        roundView.layer.cornerRadius = roundView.frame.height / 2
+        roundView.clipsToBounds = true
+    }
+
+    func setupHoursLabel() {
+        hoursLabel.layer.cornerRadius = 2
+        hoursLabel.clipsToBounds = true
+    }
+
+    // *****************************************************************************
+    // - MARK: Rx Bindings
     func setupRxBindings(with viewModel: ToiletCellViewModelInterface) {
         bindTheme()
         bindAddress(with: viewModel)
         bindHours(with: viewModel)
+        bindDistance(with: viewModel)
         bindFavoriteImage(with: viewModel)
     }
 
@@ -42,7 +66,6 @@ private extension ToiletCell {
         themeService.rx
             .bind({ $0.backgroundColor }, to: rx.backgroundColor)
             .bind({ $0.textColor }, to: addressLabel.rx.textColor)
-            .bind({ $0.textColor }, to: hoursLabel.rx.textColor)
             .bind({ $0.textColor }, to: favoriteImageView.rx.tintColor)
     }
 
@@ -52,6 +75,10 @@ private extension ToiletCell {
 
     func bindHours(with viewModel: ToiletCellViewModelInterface) {
         viewModel.hours.bind(to: hoursLabel.rx.text).disposed(by: bag)
+    }
+
+    func bindDistance(with viewModel: ToiletCellViewModelInterface) {
+        viewModel.distance.bind(to: distanceLabel.rx.text).disposed(by: bag)
     }
 
     func bindFavoriteImage(with viewModel: ToiletCellViewModelInterface) {

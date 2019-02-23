@@ -22,7 +22,10 @@ final class SplashScreenController: RxViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupView()
         setupRxBindings()
+
+        viewModel.fetchData()
     }
 }
 
@@ -30,6 +33,7 @@ private extension SplashScreenController {
     // *****************************************************************************
     // - MARK: View
     func setupView() {
+        navigationController?.navigationBar.isHidden = true
         setupActivityIndicator()
     }
 
@@ -49,7 +53,10 @@ private extension SplashScreenController {
     }
 
     func bindIsLoading() {
-        viewModel.isLoading.bind(to: activityIndicator.rx.isHidden).disposed(by: bag)
+        viewModel.isLoading
+            .map { !$0 }
+            .bind(to: activityIndicator.rx.isHidden)
+            .disposed(by: bag)
         viewModel.isLoading
             .subscribe(onNext: { [weak self] isLoading in
                 if isLoading {

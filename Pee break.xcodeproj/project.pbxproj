@@ -27,6 +27,8 @@
 		B3389EC52221BC9A000B7CC4 /* SplashScreenCoordinatorOutputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3389EC42221BC9A000B7CC4 /* SplashScreenCoordinatorOutputInterface.swift */; };
 		B3389EC72221C764000B7CC4 /* SplashScreenOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3389EC62221C764000B7CC4 /* SplashScreenOutput.swift */; };
 		B3389EC92221C780000B7CC4 /* SplashScreenOutputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3389EC82221C780000B7CC4 /* SplashScreenOutputInterface.swift */; };
+		B3389ED42221EE00000B7CC4 /* ToiletsOutputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3389ED32221EE00000B7CC4 /* ToiletsOutputInterface.swift */; };
+		B3389ED62221EE16000B7CC4 /* ToiletsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3389ED52221EE16000B7CC4 /* ToiletsOutput.swift */; };
 		B35527E82220A3DF00CE903F /* TabbarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527E72220A3DF00CE903F /* TabbarFactory.swift */; };
 		B35527EA2220A40F00CE903F /* TabbarFactoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527E92220A40F00CE903F /* TabbarFactoryInterface.swift */; };
 		B35527EF2220A4FC00CE903F /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35527EE2220A4FC00CE903F /* FavoritesCoordinator.swift */; };
@@ -54,6 +56,7 @@
 		B37E1EE72220825C0043A976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37E1EE62220825C0043A976 /* Assets.xcassets */; };
 		B37E1EEA2220825C0043A976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E1EE82220825C0043A976 /* LaunchScreen.storyboard */; };
 		B386DF852220DA87007AC448 /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386DF842220DA87007AC448 /* RealmProvider.swift */; };
+		B3ACC4D9222208960094E66A /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ACC4D8222208960094E66A /* UIWindowExtension.swift */; };
 		B3FA45BF2220856400DCC480 /* ToiletsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45BD2220856400DCC480 /* ToiletsController.swift */; };
 		B3FA45C02220856400DCC480 /* ToiletsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3FA45BE2220856400DCC480 /* ToiletsController.xib */; };
 		B3FA45C22220857A00DCC480 /* ToiletsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45C12220857A00DCC480 /* ToiletsViewModel.swift */; };
@@ -98,6 +101,8 @@
 		B3389EC42221BC9A000B7CC4 /* SplashScreenCoordinatorOutputInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenCoordinatorOutputInterface.swift; sourceTree = "<group>"; };
 		B3389EC62221C764000B7CC4 /* SplashScreenOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenOutput.swift; sourceTree = "<group>"; };
 		B3389EC82221C780000B7CC4 /* SplashScreenOutputInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenOutputInterface.swift; sourceTree = "<group>"; };
+		B3389ED32221EE00000B7CC4 /* ToiletsOutputInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsOutputInterface.swift; sourceTree = "<group>"; };
+		B3389ED52221EE16000B7CC4 /* ToiletsOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsOutput.swift; sourceTree = "<group>"; };
 		B35527E72220A3DF00CE903F /* TabbarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarFactory.swift; sourceTree = "<group>"; };
 		B35527E92220A40F00CE903F /* TabbarFactoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarFactoryInterface.swift; sourceTree = "<group>"; };
 		B35527EE2220A4FC00CE903F /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 		B37E1EE92220825C0043A976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B37E1EEB2220825C0043A976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B386DF842220DA87007AC448 /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		B3ACC4D8222208960094E66A /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		B3FA45BD2220856400DCC480 /* ToiletsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsController.swift; sourceTree = "<group>"; };
 		B3FA45BE2220856400DCC480 /* ToiletsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletsController.xib; sourceTree = "<group>"; };
 		B3FA45C12220857A00DCC480 /* ToiletsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsViewModel.swift; sourceTree = "<group>"; };
@@ -268,6 +274,39 @@
 			path = Output;
 			sourceTree = "<group>";
 		};
+		B3389ED02221CAC2000B7CC4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B35528092220CA7300CE903F /* Factory */,
+				B35528102220CAF000CE903F /* ToiletsCoordinator.swift */,
+				B35528122220CC1B00CE903F /* ToiletsCoordinatorOutput.swift */,
+				B35528142220CC2600CE903F /* ToiletsCoordinatorOutputInterface.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B3389ED12221CACC000B7CC4 /* ToiletsController */ = {
+			isa = PBXGroup;
+			children = (
+				B3389ED22221EDE0000B7CC4 /* Output */,
+				B3389E9F22219C05000B7CC4 /* Cell */,
+				B3FA45BD2220856400DCC480 /* ToiletsController.swift */,
+				B3FA45BE2220856400DCC480 /* ToiletsController.xib */,
+				B3FA45C12220857A00DCC480 /* ToiletsViewModel.swift */,
+				B3FA45C32220858F00DCC480 /* ToiletsViewModelInterface.swift */,
+			);
+			path = ToiletsController;
+			sourceTree = "<group>";
+		};
+		B3389ED22221EDE0000B7CC4 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				B3389ED32221EE00000B7CC4 /* ToiletsOutputInterface.swift */,
+				B3389ED52221EE16000B7CC4 /* ToiletsOutput.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
 		B35527EB2220A44600CE903F /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,15 +405,8 @@
 		B3FA45BC2220854200DCC480 /* ToiletsFlow */ = {
 			isa = PBXGroup;
 			children = (
-				B3389E9F22219C05000B7CC4 /* Cell */,
-				B35528092220CA7300CE903F /* Factory */,
-				B3FA45BD2220856400DCC480 /* ToiletsController.swift */,
-				B3FA45BE2220856400DCC480 /* ToiletsController.xib */,
-				B3FA45C12220857A00DCC480 /* ToiletsViewModel.swift */,
-				B3FA45C32220858F00DCC480 /* ToiletsViewModelInterface.swift */,
-				B35528102220CAF000CE903F /* ToiletsCoordinator.swift */,
-				B35528122220CC1B00CE903F /* ToiletsCoordinatorOutput.swift */,
-				B35528142220CC2600CE903F /* ToiletsCoordinatorOutputInterface.swift */,
+				B3389ED02221CAC2000B7CC4 /* Coordinator */,
+				B3389ED12221CACC000B7CC4 /* ToiletsController */,
 			);
 			path = ToiletsFlow;
 			sourceTree = "<group>";
@@ -397,6 +429,7 @@
 				B3389EA622219C7B000B7CC4 /* RxTableViewCell.swift */,
 				B3389EA82221A305000B7CC4 /* UITableViewCellExtension.swift */,
 				B3389EAE2221A5A6000B7CC4 /* UITableViewExtension.swift */,
+				B3ACC4D8222208960094E66A /* UIWindowExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -594,6 +627,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxMKMapView/RxMKMapView.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme/RxTheme.framework",
@@ -609,6 +643,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxMKMapView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
@@ -629,12 +664,14 @@
 				B3FA45DA22208F6C00DCC480 /* DeeplinkOption.swift in Sources */,
 				B3FA45C8222088F800DCC480 /* BaseViewController.swift in Sources */,
 				B3FA45EB2220990A00DCC480 /* Assets.swift in Sources */,
+				B3ACC4D9222208960094E66A /* UIWindowExtension.swift in Sources */,
 				B355280D2220CAC300CE903F /* ToiletsFactoryInterface.swift in Sources */,
 				B3389EC52221BC9A000B7CC4 /* SplashScreenCoordinatorOutputInterface.swift in Sources */,
 				B3FA45C22220857A00DCC480 /* ToiletsViewModel.swift in Sources */,
 				B35527EF2220A4FC00CE903F /* FavoritesCoordinator.swift in Sources */,
 				B3FA45E02220901700DCC480 /* RouterImp.swift in Sources */,
 				B35528022220AC5F00CE903F /* Provider.swift in Sources */,
+				B3389ED62221EE16000B7CC4 /* ToiletsOutput.swift in Sources */,
 				B3389EBA2221BAD4000B7CC4 /* SplashScreenCoordinator.swift in Sources */,
 				B3FA45CA2220891D00DCC480 /* RxViewController.swift in Sources */,
 				B35528152220CC2600CE903F /* ToiletsCoordinatorOutputInterface.swift in Sources */,
@@ -671,6 +708,7 @@
 				B35527FC2220A96600CE903F /* FavoritesFactoryInterface.swift in Sources */,
 				B3FA45E22220905400DCC480 /* ApplicationCoordinator.swift in Sources */,
 				B35528132220CC1B00CE903F /* ToiletsCoordinatorOutput.swift in Sources */,
+				B3389ED42221EE00000B7CC4 /* ToiletsOutputInterface.swift in Sources */,
 				B35528172220CE4600CE903F /* DefaultProvider.swift in Sources */,
 				B35527EA2220A40F00CE903F /* TabbarFactoryInterface.swift in Sources */,
 				B355281A2220D86600CE903F /* ToiletData.swift in Sources */,

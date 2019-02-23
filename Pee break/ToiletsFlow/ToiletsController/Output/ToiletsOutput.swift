@@ -6,4 +6,8 @@
 //  Copyright © 2019 Leo Marcotte. All rights reserved.
 //
 
-import Foundation
+import RxCocoa
+
+final class ToiletOutput: ToiletsOutputInterface {
+    let updateDataAction = PublishRelay<Void>()
+}
