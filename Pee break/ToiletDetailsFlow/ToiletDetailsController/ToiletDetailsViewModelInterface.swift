@@ -6,6 +6,7 @@
 //  Copyright © 2019 Leo Marcotte. All rights reserved.
 //
 
+import MapKit
 import RxCocoa
 
 protocol ToiletDetailsViewModelInterface {
@@ -14,5 +15,6 @@ protocol ToiletDetailsViewModelInterface {
     var addressImage: BehaviorRelay<UIImage> { get }
     var address: BehaviorRelay<String> { get }
     var hours: BehaviorRelay<String> { get }
+    var annotations: Driver<[MKPointAnnotation]> { get }
     var output: ToiletDetailsOutputInferface { get }
 }

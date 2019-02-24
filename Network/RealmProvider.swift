@@ -12,4 +12,6 @@ protocol RealmProvider {
     func updateData() -> Observable<(HTTPURLResponse, Any)>
     func getToilets() -> Observable<[ToiletData]>
     func getFavorites() -> Observable<[ToiletData]>
+    func addFavorite(data: ToiletData)
+    func removeFavorite(data: ToiletData)
 }

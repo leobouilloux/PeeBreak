@@ -64,7 +64,7 @@ private extension ToiletDetailsCoordinator {
                     UIApplication.shared.canOpenURL(googleMapURL),
                     let url = URL(string: "comgooglemaps://?saddr=&daddr=\(toiletData.x)),\(toiletData.y))&directionsmode=driving")
                     else { return }
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                UIApplication.shared.open(url, options: [:])
         })
         .disposed(by: bag)
     }
@@ -88,7 +88,7 @@ private extension ToiletDetailsCoordinator {
                 ]
                 let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
                 let mapItem = MKMapItem(placemark: placemark)
-                mapItem.name = "Place Name"
+                mapItem.name = toiletData.address
                 mapItem.openInMaps(launchOptions: options)
             })
             .disposed(by: bag)

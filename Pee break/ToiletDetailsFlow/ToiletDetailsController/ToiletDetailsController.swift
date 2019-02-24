@@ -6,6 +6,7 @@
 //  Copyright © 2019 Leo Marcotte. All rights reserved.
 //
 
+import CoreLocation
 import MapKit
 import MessageUI
 import UIKit
@@ -21,6 +22,7 @@ final class ToiletDetailsController: RxViewController, MFMessageComposeViewContr
     private var alertController = UIAlertController()
 
     private let viewModel: ToiletDetailsViewModelInterface
+    private let locationManager = CLLocationManager()
 
     init(with viewModel: ToiletDetailsViewModelInterface) {
         self.viewModel = viewModel
@@ -40,17 +42,33 @@ final class ToiletDetailsController: RxViewController, MFMessageComposeViewContr
     }
 }
 
-private extension ToiletDetailsController {
+extension ToiletDetailsController: MKMapViewDelegate, CLLocationManagerDelegate {
     // *****************************************************************************
     // - MARK: View
     func setupView() {
         setupNavigationBar()
+        setupMapView()
         setupAlertController()
     }
 
     func setupNavigationBar() {
         actionBarButton.image = Asset.dotsHorizontal.image
         navigationItem.rightBarButtonItem = actionBarButton
+    }
+
+    func setupMapView() {
+        mapView.delegate = self
+        mapView.mapType = .mutedStandard
+        mapView.showsUserLocation = true
+        mapView.isZoomEnabled = true
+
+        locationManager.requestWhenInUseAuthorization()
+
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
     }
 
     func setupAlertController() {
@@ -98,7 +116,7 @@ private extension ToiletDetailsController {
     func setupRxBindings() {
         bindTheme()
         bindActionBarButton()
-        bindMap()
+        bindMapView()
         bindAddressImage()
         bindAddress()
         bindHoursImage()
@@ -122,9 +140,23 @@ private extension ToiletDetailsController {
             })
             .disposed(by: bag)
     }
-    
-    func bindMap() {
-        
+
+    func bindMapView() {
+        viewModel.annotations.drive(mapView.rx.annotations).disposed(by: bag)
+        viewModel.annotations
+            .drive(onNext: { [weak self] annotations in
+                guard let annotation = annotations.first else { return }
+
+                self?.mapView.setRegion(
+                    MKCoordinateRegion(
+                        center: annotation.coordinate,
+                        latitudinalMeters: 500,
+                        longitudinalMeters: 500
+                    ),
+                    animated: false
+                )
+            })
+            .disposed(by: bag)
     }
 
     func bindAddressImage() {

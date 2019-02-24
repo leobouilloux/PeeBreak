@@ -73,6 +73,13 @@ private extension ToiletsViewModel {
                     return distance1 < distance2
                 })
 
+                sortedToiletData.forEach({ data in
+                    if data.isFavorite {
+                        print("IS FAVORITE!!!!!")
+                    }
+                })
+//                print(sortedToiletData.first(where: { $0.isFavorite }))
+
                 let cells = sortedToiletData.map { ToiletsCellType.toilet(value: $0) }
 
                 let annotations = sortedToiletData.map { toilet -> MKPointAnnotation in

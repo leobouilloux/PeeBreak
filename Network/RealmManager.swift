@@ -48,6 +48,26 @@ final class RealmManager: RealmProvider {
         return Observable.array(from: data)
     }
 
+    func addFavorite(data: ToiletData) {
+        do {
+            try realm.write {
+                data.isFavorite = true
+            }
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+
+    func removeFavorite(data: ToiletData) {
+        do {
+            try realm.write {
+                data.isFavorite = false
+            }
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+
     // *****************************************************************************
     // - MARK: Helpers
     private func parseToiletsData(data: Any) -> [ToiletData] {
