@@ -10,5 +10,5 @@ import RxCocoa
 
 protocol FavoritesCoordinatorOutputInterface {
     var toiletsAction: PublishRelay<Void> { get }
-    var detailsAction: PublishRelay<ToiletData> { get }
+    var toiletDetailsAction: PublishRelay<ToiletData> { get }
 }

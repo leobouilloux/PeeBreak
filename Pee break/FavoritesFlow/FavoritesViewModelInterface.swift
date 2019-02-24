@@ -6,4 +6,16 @@
 //  Copyright © 2019 Leo Marcotte. All rights reserved.
 //
 
-protocol FavoritesViewModelInterface {}
+import CoreLocation
+import MapKit
+import RxCocoa
+
+protocol FavoritesViewModelInterface {
+    var title: BehaviorRelay<String> { get }
+
+    var dataSource: BehaviorRelay<[ToiletsCellType]> { get }
+    var annotations: Driver<[MKPointAnnotation]> { get }
+    var userLocation: BehaviorRelay<CLLocation?> { get }
+    var isLoading: PublishRelay<Bool> { get }
+    var output: ToiletsOutputInterface { get }
+}

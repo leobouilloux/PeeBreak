@@ -8,6 +8,6 @@
 
 import RxCocoa
 
-public class SplashScreenCoordinatorOutput: SplashScreenCoordinatorOutputInterface {
-    public let finishFlowAction = PublishRelay<Void>()
+final class SplashScreenCoordinatorOutput: SplashScreenCoordinatorOutputInterface {
+    let finishFlowAction = PublishRelay<Void>()
 }

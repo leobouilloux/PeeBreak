@@ -8,12 +8,13 @@
 
 import RxSwift
 
-public final class SplashScreenCoordinator: BaseCoordinator {
+final class SplashScreenCoordinator: BaseCoordinator {
     private let factory: SplashScreenFactoryInterface
-    public let output: SplashScreenCoordinatorOutput
     private let coordinatorFactory: CoordinatorFactory
     private let provider: Provider
     private let bag = DisposeBag()
+
+    let output: SplashScreenCoordinatorOutput
 
     init(router: Router, factory: SplashScreenFactoryInterface, coordinatorFactory: CoordinatorFactory, provider: Provider) {
         self.factory = factory
@@ -23,7 +24,7 @@ public final class SplashScreenCoordinator: BaseCoordinator {
         super.init(router: router)
     }
 
-    override public func start(with option: DeepLinkOption? = nil) {
+    override func start(with option: DeepLinkOption? = nil) {
         setupRoot()
     }
 }

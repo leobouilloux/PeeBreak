@@ -8,6 +8,6 @@
 
 import RxCocoa
 
-public protocol SplashScreenCoordinatorOutputInterface {
+protocol SplashScreenCoordinatorOutputInterface {
     var finishFlowAction: PublishRelay<Void> { get }
 }

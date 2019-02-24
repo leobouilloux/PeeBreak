@@ -9,6 +9,6 @@
 import RxCocoa
 
 final class FavoritesCoordinatorOutput: FavoritesCoordinatorOutputInterface {
-    public let toiletsAction = PublishRelay<Void>()
-    public let detailsAction = PublishRelay<ToiletData>()
+    let toiletsAction = PublishRelay<Void>()
+    let toiletDetailsAction = PublishRelay<ToiletData>()
 }

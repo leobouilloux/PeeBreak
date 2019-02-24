@@ -12,9 +12,10 @@ import RxSwift
 
 final class ToiletDetailsCoordinator: BaseCoordinator {
     private let factory: ToiletDetailsFactoryInterface
-    public let output: ToiletDetailsCoordinatorOutputInterface = ToiletDetailsCoordinatorOutput()
     private let provider: Provider
     private let bag = DisposeBag()
+
+    let output: ToiletDetailsCoordinatorOutputInterface = ToiletDetailsCoordinatorOutput()
 
     init(router: Router, factory: ToiletDetailsFactoryInterface, provider: Provider) {
         self.factory = factory
@@ -28,7 +29,7 @@ final class ToiletDetailsCoordinator: BaseCoordinator {
         setupRootCoordinator(with: data)
     }
 
-    override public func start(with option: DeepLinkOption? = nil) {}
+    override func start(with option: DeepLinkOption? = nil) {}
 
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
 
