@@ -8,7 +8,7 @@
 
 import RxCocoa
 
-public protocol ToiletsCoordinatorOutputInterface {
+protocol ToiletsCoordinatorOutputInterface {
     var toiletsAction: PublishRelay<Void> { get }
-    var detailsAction: PublishRelay<Void> { get }
+    var toiletDetailsAction: PublishRelay<ToiletData> { get }
 }

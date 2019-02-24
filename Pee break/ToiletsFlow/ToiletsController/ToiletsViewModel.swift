@@ -16,9 +16,6 @@ final class ToiletsViewModel: ToiletsViewModelInterface {
 
     let title = BehaviorRelay<String>(value: "Toilettes autour de vous")
 
-    var dataSource: Driver<[ToiletsCellType]> {
-        return privateDataSource.asDriver(onErrorJustReturn: [])
-    }
     var annotations: Driver<[MKPointAnnotation]> {
         return privateAnnotations.asDriver(onErrorJustReturn: [])
     }
@@ -28,7 +25,7 @@ final class ToiletsViewModel: ToiletsViewModelInterface {
     let userLocation = BehaviorRelay<CLLocation?>(value: nil)
 
     private let data = BehaviorRelay<[ToiletData]>(value: [])
-    private let privateDataSource = BehaviorRelay<[ToiletsCellType]>(value: [])
+    let dataSource = BehaviorRelay<[ToiletsCellType]>(value: [])
     private let privateAnnotations = BehaviorRelay<[MKPointAnnotation]>(value: [])
 
     private let bag = DisposeBag()
@@ -95,7 +92,7 @@ private extension ToiletsViewModel {
 
                     return annotation
                 }
-                self?.privateDataSource.accept(cells)
+                self?.dataSource.accept(cells)
                 self?.privateAnnotations.accept(annotations)
             })
             .disposed(by: bag)

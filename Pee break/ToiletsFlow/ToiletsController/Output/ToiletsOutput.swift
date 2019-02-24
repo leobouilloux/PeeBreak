@@ -10,4 +10,5 @@ import RxCocoa
 
 final class ToiletOutput: ToiletsOutputInterface {
     let updateDataAction = PublishRelay<Void>()
+    let toiletDetailsAction = PublishRelay<ToiletData>()
 }

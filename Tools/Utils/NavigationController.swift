@@ -29,6 +29,7 @@ private extension NavigationController {
     func bindTheme() {
         themeService.rx
             .bind({ $0.backgroundColor }, to: navigationBar.rx.barTintColor)
+            .bind({ $0.textColor }, to: navigationBar.rx.tintColor)
             .bind({ $0.navigationBarTintColor }, to: navigationBar.rx.titleTextAttributes)
             .disposed(by: bag)
     }

@@ -56,7 +56,6 @@ extension ToiletsController: UITableViewDelegate, MKMapViewDelegate, CLLocationM
     }
 
     func setupTableView() {
-        tableView.allowsSelection = false
         tableView.register(cell: ToiletCell.self)
         tableView.refreshControl = refreshControl
     }
@@ -117,13 +116,6 @@ extension ToiletsController: UITableViewDelegate, MKMapViewDelegate, CLLocationM
                 self?.viewModel.userLocation.accept(location)
             })
             .disposed(by: bag)
-
-        mapView.rx.didSelectAnnotationView
-            .subscribe(onNext: { [weak self] annotation in
-                print(annotation)
-            })
-            .disposed(by: bag)
-
         viewModel.annotations.drive(mapView.rx.annotations).disposed(by: bag)
     }
 
@@ -135,11 +127,16 @@ extension ToiletsController: UITableViewDelegate, MKMapViewDelegate, CLLocationM
         tableView
             .rx
             .itemSelected
-            .subscribe(onNext: { [weak self] _ in
+            .subscribe(onNext: { [weak self] indexPath in
+                guard let cellType = self?.viewModel.dataSource.value[indexPath.row] else { return }
 
+                switch cellType {
+                case let .toilet(data): self?.viewModel.output.toiletDetailsAction.accept(data)
+                }
             })
             .disposed(by: bag)
         viewModel.dataSource
+            .asDriver(onErrorJustReturn: [])
             .drive(tableView.rx.items) { [weak self] _, row, cellType in
                 let indexPath = IndexPath(row: row, section: 0)
 

@@ -10,4 +10,5 @@ import RxCocoa
 
 protocol ToiletsOutputInterface {
     var updateDataAction: PublishRelay<Void> { get }
+    var toiletDetailsAction: PublishRelay<ToiletData> { get }
 }

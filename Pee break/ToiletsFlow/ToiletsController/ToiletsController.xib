@@ -22,13 +22,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nce-BF-H1v">
-                    <rect key="frame" x="0.0" y="20" width="320" height="156"/>
+                    <rect key="frame" x="0.0" y="20" width="320" height="150"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="156" id="YY6-wz-JUe"/>
+                        <constraint firstAttribute="height" constant="150" id="YY6-wz-JUe"/>
                     </constraints>
                 </mapView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="seY-wr-BvI">
-                    <rect key="frame" x="0.0" y="176" width="320" height="392"/>
+                    <rect key="frame" x="0.0" y="170" width="320" height="398"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>

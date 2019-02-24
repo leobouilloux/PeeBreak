@@ -8,7 +8,7 @@
 
 import RxCocoa
 
-public class ToiletsCoordinatorOutput: ToiletsCoordinatorOutputInterface {
-    public let toiletsAction = PublishRelay<Void>()
-    public let detailsAction = PublishRelay<Void>()
+final class ToiletsCoordinatorOutput: ToiletsCoordinatorOutputInterface {
+    let toiletsAction = PublishRelay<Void>()
+    let toiletDetailsAction = PublishRelay<ToiletData>()
 }
