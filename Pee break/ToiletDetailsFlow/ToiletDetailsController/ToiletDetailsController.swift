@@ -74,7 +74,7 @@ extension ToiletDetailsController: MKMapViewDelegate, CLLocationManagerDelegate 
     func setupAlertController() {
         alertController = UIAlertController(title: "Choisir une action", message: "", preferredStyle: .actionSheet)
 
-        let favoritesAction = UIAlertAction(title: "Ajouter aux favoris", style: .default) { [weak self] _ in
+        let favoritesAction = UIAlertAction(title: "Ajouter / Retirer aux favoris", style: .default) { [weak self] _ in
             self?.viewModel.output.addFavoriteAction.accept(())
         }
         let shareSMSAction = UIAlertAction(title: "Partager par SMS", style: .default) { [weak self] _ in

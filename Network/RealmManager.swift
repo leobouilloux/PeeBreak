@@ -99,6 +99,15 @@ final class RealmManager: RealmProvider {
     }
 
     private func saveToiletsData(data: [ToiletData]) {
+        /// Ugly fix because of time running out
+        let storedData = realm.objects(ToiletData.self).toArray()
+
+        data.forEach { toilet in
+            guard let isFavorite = storedData.first(where: { $0.id == toilet.id })?.isFavorite else { return }
+            toilet.isFavorite = isFavorite
+        }
+        ///
+
         do {
             try realm.write {
                 realm.add(data, update: true)

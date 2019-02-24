@@ -25,9 +25,6 @@ final class ToiletCellViewModel: ToiletCellViewModelInterface {
         let formattedHours = " \(data.hours.replacingOccurrences(of: " ", with: "")) "
         self.hours = BehaviorRelay<String>(value: formattedHours)
 
-        if data.isFavorite {
-            print("IS FAVORITE!!!")
-        }
         self.isFavorite = BehaviorRelay<Bool>(value: data.isFavorite)
 
         if let distance = data.distance.value {

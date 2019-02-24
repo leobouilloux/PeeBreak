@@ -68,9 +68,9 @@ private extension ToiletDetailsViewModel {
                 guard let self = self else { return }
 
                 if self.data.isFavorite {
-                    self.provider.dataProvider.addFavorite(data: self.data)
-                } else {
                     self.provider.dataProvider.removeFavorite(data: self.data)
+                } else {
+                    self.provider.dataProvider.addFavorite(data: self.data)
                 }
             })
             .disposed(by: bag)
