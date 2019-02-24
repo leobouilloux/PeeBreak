@@ -28,7 +28,7 @@ final class FavoritesViewModel: FavoritesViewModelInterface {
         return privateAnnotations.asDriver(onErrorJustReturn: [])
     }
     let isLoading = PublishRelay<Bool>()
-    let output: ToiletsOutputInterface = ToiletOutput()
+    let output: FavoritesOutputInterface = FavoritesOutput()
 
     let userLocation = BehaviorRelay<CLLocation?>(value: nil)
 
@@ -72,6 +72,7 @@ private extension FavoritesViewModel {
 
     func bindData() {
         data
+            // swiftlint:disable:next closure_body_length
             .subscribe(onNext: { [weak self] toiletsData in
                 let sortedToiletData = toiletsData.sorted(by: { data1, data2 -> Bool in
                     guard
@@ -81,7 +82,6 @@ private extension FavoritesViewModel {
                     return distance1 < distance2
                 })
                 let cells = sortedToiletData.map { ToiletsCellType.toilet(value: $0) }
-
                 let annotations = sortedToiletData.map { toilet -> MKPointAnnotation in
                     let location = CLLocation(latitude: toilet.x, longitude: toilet.y)
                     let annotation = MKPointAnnotation()
@@ -95,7 +95,6 @@ private extension FavoritesViewModel {
                     }
                     annotation.subtitle = toilet.hours
                     annotation.coordinate = location.coordinate
-
                     return annotation
                 }
                 self?.dataSource.accept(cells)

@@ -19,6 +19,8 @@
 		B31966F22222D668003DC828 /* ToiletDetailsCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31966F12222D668003DC828 /* ToiletDetailsCoordinatorFactory.swift */; };
 		B31966F42222D76E003DC828 /* ToiletDetailsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31966F32222D76E003DC828 /* ToiletDetailsOutput.swift */; };
 		B31966F62222D7E2003DC828 /* ToiletDetailsOutputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31966F52222D7E2003DC828 /* ToiletDetailsOutputInterface.swift */; };
+		B31966FA222308B8003DC828 /* FavoritesOutputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31966F9222308B8003DC828 /* FavoritesOutputInterface.swift */; };
+		B31966FC222308C2003DC828 /* FavoritesOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31966FB222308C2003DC828 /* FavoritesOutput.swift */; };
 		B3389EA122219C14000B7CC4 /* ToiletsCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3389EA022219C14000B7CC4 /* ToiletsCellType.swift */; };
 		B3389EA422219C41000B7CC4 /* ToiletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3389EA222219C41000B7CC4 /* ToiletCell.swift */; };
 		B3389EA522219C41000B7CC4 /* ToiletCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3389EA322219C41000B7CC4 /* ToiletCell.xib */; };
@@ -106,6 +108,8 @@
 		B31966F12222D668003DC828 /* ToiletDetailsCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsCoordinatorFactory.swift; sourceTree = "<group>"; };
 		B31966F32222D76E003DC828 /* ToiletDetailsOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsOutput.swift; sourceTree = "<group>"; };
 		B31966F52222D7E2003DC828 /* ToiletDetailsOutputInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsOutputInterface.swift; sourceTree = "<group>"; };
+		B31966F9222308B8003DC828 /* FavoritesOutputInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesOutputInterface.swift; sourceTree = "<group>"; };
+		B31966FB222308C2003DC828 /* FavoritesOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesOutput.swift; sourceTree = "<group>"; };
 		B3389EA022219C14000B7CC4 /* ToiletsCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsCellType.swift; sourceTree = "<group>"; };
 		B3389EA222219C41000B7CC4 /* ToiletCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletCell.swift; sourceTree = "<group>"; };
 		B3389EA322219C41000B7CC4 /* ToiletCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletCell.xib; sourceTree = "<group>"; };
@@ -270,6 +274,27 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		B31966F722230856003DC828 /* FavoritesController */ = {
+			isa = PBXGroup;
+			children = (
+				B31966F82223088B003DC828 /* Output */,
+				B35527F22220A55B00CE903F /* FavoritesController.swift */,
+				B35527F32220A55B00CE903F /* FavoritesController.xib */,
+				B35527F02220A54B00CE903F /* FavoritesViewModel.swift */,
+				B35527F62220A58500CE903F /* FavoritesViewModelInterface.swift */,
+			);
+			path = FavoritesController;
+			sourceTree = "<group>";
+		};
+		B31966F82223088B003DC828 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				B31966F9222308B8003DC828 /* FavoritesOutputInterface.swift */,
+				B31966FB222308C2003DC828 /* FavoritesOutput.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
 		B3389E9F22219C05000B7CC4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,10 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				B35527F82220A91F00CE903F /* Coordinator */,
-				B35527F22220A55B00CE903F /* FavoritesController.swift */,
-				B35527F32220A55B00CE903F /* FavoritesController.xib */,
-				B35527F02220A54B00CE903F /* FavoritesViewModel.swift */,
-				B35527F62220A58500CE903F /* FavoritesViewModelInterface.swift */,
+				B31966F722230856003DC828 /* FavoritesController */,
 			);
 			path = FavoritesFlow;
 			sourceTree = "<group>";
@@ -762,6 +784,7 @@
 				B35528022220AC5F00CE903F /* Provider.swift in Sources */,
 				B3389ED62221EE16000B7CC4 /* ToiletsOutput.swift in Sources */,
 				B3389EBA2221BAD4000B7CC4 /* SplashScreenCoordinator.swift in Sources */,
+				B31966FC222308C2003DC828 /* FavoritesOutput.swift in Sources */,
 				B31966F02222D60C003DC828 /* ToiletDetailsFactory.swift in Sources */,
 				B3FA45CA2220891D00DCC480 /* RxViewController.swift in Sources */,
 				B35528152220CC2600CE903F /* ToiletsCoordinatorOutputInterface.swift in Sources */,
@@ -799,6 +822,7 @@
 				B35527E82220A3DF00CE903F /* TabbarFactory.swift in Sources */,
 				B35528042220AECC00CE903F /* RealmManager.swift in Sources */,
 				B3ACC4DB22220C190094E66A /* NavigationController.swift in Sources */,
+				B31966FA222308B8003DC828 /* FavoritesOutputInterface.swift in Sources */,
 				B3389EA92221A305000B7CC4 /* UITableViewCellExtension.swift in Sources */,
 				B3FA45D222208EC700DCC480 /* NSObjectExtension.swift in Sources */,
 				B35528062220AEDD00CE903F /* RequestManager.swift in Sources */,
