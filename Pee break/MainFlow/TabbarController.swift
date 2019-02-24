@@ -42,7 +42,7 @@ private extension TabbarController {
 
     func bindTheme() {
         themeService.rx
-            .bind({ $0.backgroundColor }, to: tabBar.rx.backgroundColor)
+            .bind({ $0.backgroundColor }, to: tabBar.rx.barTintColor)
             .bind({ $0.textColor }, to: tabBar.rx.tintColor)
             .disposed(by: bag)
     }

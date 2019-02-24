@@ -14,6 +14,7 @@ final class ToiletCellViewModel: ToiletCellViewModelInterface {
     let hours: BehaviorRelay<String>
     let distance = BehaviorRelay<String>(value: "NaN")
     let favoriteImage = BehaviorRelay<UIImage>(value: UIImage())
+    let chevronImage = BehaviorRelay<UIImage>(value: Asset.chevronRight.image.withRenderingMode(.alwaysTemplate))
 
     private let isFavorite: BehaviorRelay<Bool>
     private let bag = DisposeBag()
@@ -44,7 +45,7 @@ final class ToiletCellViewModel: ToiletCellViewModelInterface {
     func bindIsFavorite() {
         isFavorite
             .subscribe(onNext: { [weak self] isFavorite in
-                let image = isFavorite ? Asset.favourite.image : UIImage()
+                let image = isFavorite ? Asset.favourite.image.withRenderingMode(.alwaysTemplate) : UIImage()
                 self?.favoriteImage.accept(image)
             })
             .disposed(by: bag)

@@ -41,42 +41,52 @@
                         </constraints>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Abn-dY-zQd">
-                        <rect key="frame" x="284" y="46.5" width="16" height="16"/>
+                        <rect key="frame" x="51.5" y="51.5" width="16" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="Elq-H6-Mwq"/>
                             <constraint firstAttribute="width" constant="16" id="wgf-UP-isV"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="73 rue du Temple, 75003" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO3-h1-OIf">
+                        <rect key="frame" x="77.5" y="27" width="186.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yoU-KL-Vpt">
+                        <rect key="frame" x="284" y="36" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="efs-2X-9MA"/>
+                            <constraint firstAttribute="width" constant="16" id="p41-5e-uft"/>
+                        </constraints>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24/24h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfF-f5-lW2">
-                        <rect key="frame" x="233" y="47" width="41" height="15"/>
+                        <rect key="frame" x="223" y="47" width="41" height="15"/>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="73 rue du Temple, 75003" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO3-h1-OIf">
-                        <rect key="frame" x="77.5" y="27" width="222.5" height="12"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="yoU-KL-Vpt" firstAttribute="leading" secondItem="nO3-h1-OIf" secondAttribute="trailing" constant="20" id="2Il-aw-exG"/>
+                    <constraint firstItem="yoU-KL-Vpt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4Bn-Wc-jIg"/>
                     <constraint firstItem="sxZ-rg-Pbb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="C6m-ZP-UaN"/>
-                    <constraint firstAttribute="trailing" secondItem="nO3-h1-OIf" secondAttribute="trailing" constant="20" id="SZJ-UX-WyT"/>
                     <constraint firstItem="nO3-h1-OIf" firstAttribute="centerY" secondItem="sxZ-rg-Pbb" secondAttribute="centerY" multiplier="0.75" id="Ydr-fs-QV1"/>
                     <constraint firstItem="nO3-h1-OIf" firstAttribute="leading" secondItem="sxZ-rg-Pbb" secondAttribute="trailing" constant="10" id="aF7-dM-hef"/>
                     <constraint firstItem="sxZ-rg-Pbb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="bS2-SA-GJj"/>
                     <constraint firstAttribute="bottom" secondItem="sxZ-rg-Pbb" secondAttribute="bottom" constant="20" id="f7J-19-gLg"/>
-                    <constraint firstAttribute="trailing" secondItem="Abn-dY-zQd" secondAttribute="trailing" constant="20" id="fKy-lc-9vc"/>
-                    <constraint firstItem="Abn-dY-zQd" firstAttribute="centerY" secondItem="sxZ-rg-Pbb" secondAttribute="centerY" multiplier="1.25" id="gDK-CV-IRA"/>
                     <constraint firstItem="vfF-f5-lW2" firstAttribute="centerY" secondItem="sxZ-rg-Pbb" secondAttribute="centerY" multiplier="1.25" id="icy-EE-dBF"/>
-                    <constraint firstItem="Abn-dY-zQd" firstAttribute="leading" secondItem="vfF-f5-lW2" secondAttribute="trailing" constant="10" id="lgR-Xk-AZN"/>
+                    <constraint firstItem="sxZ-rg-Pbb" firstAttribute="trailing" secondItem="Abn-dY-zQd" secondAttribute="trailing" id="pVM-5s-4qY"/>
+                    <constraint firstAttribute="trailing" secondItem="yoU-KL-Vpt" secondAttribute="trailing" constant="20" id="qij-ws-Pul"/>
+                    <constraint firstItem="sxZ-rg-Pbb" firstAttribute="bottom" secondItem="Abn-dY-zQd" secondAttribute="bottom" id="u81-ux-ZSx"/>
+                    <constraint firstItem="yoU-KL-Vpt" firstAttribute="leading" secondItem="vfF-f5-lW2" secondAttribute="trailing" constant="20" id="yeH-Xw-qNU"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="addressLabel" destination="nO3-h1-OIf" id="67f-Jc-yNB"/>
+                <outlet property="chevronImageView" destination="yoU-KL-Vpt" id="GrX-eR-X29"/>
                 <outlet property="distanceLabel" destination="AbJ-3I-YVW" id="XtF-aJ-tUt"/>
                 <outlet property="favoriteImageView" destination="Abn-dY-zQd" id="uEb-eW-1q5"/>
                 <outlet property="hoursLabel" destination="vfF-f5-lW2" id="8Mz-Xv-zvb"/>

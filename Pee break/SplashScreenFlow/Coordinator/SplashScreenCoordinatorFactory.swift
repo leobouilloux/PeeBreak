@@ -11,7 +11,7 @@ import UIKit
 extension CoordinatorFactory {
     func makeSplashScreenCoordinator(
         with provider: Provider,
-        navController: UINavigationController? = nil,
+        navController: NavigationController? = nil,
         coordinatorFactory: CoordinatorFactory = CoordinatorFactory()
         ) -> SplashScreenCoordinator {
         let coordinator = SplashScreenCoordinator(router: router(navController),

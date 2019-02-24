@@ -11,7 +11,7 @@ import UIKit
 extension CoordinatorFactory {
     func makeFavoritesCoordinator(
         with provider: Provider,
-        navController: UINavigationController? = nil,
+        navController: NavigationController? = nil,
         coordinatorFactory: CoordinatorFactory = CoordinatorFactory()
         ) -> FavoritesCoordinator {
         let coordinator = FavoritesCoordinator(router: router(navController),

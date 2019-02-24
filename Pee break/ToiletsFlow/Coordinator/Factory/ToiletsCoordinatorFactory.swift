@@ -11,7 +11,7 @@ import UIKit
 extension CoordinatorFactory {
     func makeToiletsCoordinator(
         with provider: Provider,
-        navController: UINavigationController? = nil,
+        navController: NavigationController? = nil,
         coordinatorFactory: CoordinatorFactory = CoordinatorFactory()
         ) -> ToiletsCoordinator {
         let coordinator = ToiletsCoordinator(router: router(navController),

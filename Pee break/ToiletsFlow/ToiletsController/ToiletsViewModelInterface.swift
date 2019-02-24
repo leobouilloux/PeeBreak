@@ -11,6 +11,7 @@ import MapKit
 import RxCocoa
 
 protocol ToiletsViewModelInterface {
+    var title: BehaviorRelay<String> { get }
     var dataSource: Driver<[ToiletsCellType]> { get }
     var annotations: Driver<[MKPointAnnotation]> { get }
     var userLocation: BehaviorRelay<CLLocation?> { get }

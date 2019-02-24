@@ -13,6 +13,9 @@ import RxSwift
 
 final class ToiletsViewModel: ToiletsViewModelInterface {
     let provider: Provider
+
+    let title = BehaviorRelay<String>(value: "Toilettes autour de vous")
+
     var dataSource: Driver<[ToiletsCellType]> {
         return privateDataSource.asDriver(onErrorJustReturn: [])
     }

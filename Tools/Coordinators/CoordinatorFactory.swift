@@ -11,11 +11,11 @@ import UIKit
 public class CoordinatorFactory {
     public init() {}
 
-    public func router(_ navController: UINavigationController?) -> Router {
+    public func router(_ navController: NavigationController?) -> Router {
         return RouterImp(rootController: navigationController(navController))
     }
 
-    public func navigationController(_ navController: UINavigationController?) -> UINavigationController {
-        return navController ?? UINavigationController(rootViewController: UIViewController())
+    public func navigationController(_ navController: NavigationController?) -> NavigationController {
+        return navController ?? NavigationController(rootViewController: UIViewController())
     }
 }

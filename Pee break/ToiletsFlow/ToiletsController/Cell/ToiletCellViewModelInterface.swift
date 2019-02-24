@@ -13,4 +13,5 @@ protocol ToiletCellViewModelInterface {
     var hours: BehaviorRelay<String> { get }
     var distance: BehaviorRelay<String> { get }
     var favoriteImage: BehaviorRelay<UIImage> { get }
+    var chevronImage: BehaviorRelay<UIImage> { get }
 }

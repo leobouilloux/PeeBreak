@@ -46,8 +46,8 @@ final class TabbarCoordinator: Coordinator {
         ]
 
         tabbarRouter.viewControllers = [
-            toiletsCoordinator.router.toPresent() as? UINavigationController ?? UIViewController(),
-            favoritesCoordinator.router.toPresent() as? UINavigationController ?? UIViewController()
+            toiletsCoordinator.router.toPresent() as? NavigationController ?? UIViewController(),
+            favoritesCoordinator.router.toPresent() as? NavigationController ?? UIViewController()
         ]
     }
 

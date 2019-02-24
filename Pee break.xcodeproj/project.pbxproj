@@ -57,6 +57,7 @@
 		B37E1EEA2220825C0043A976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E1EE82220825C0043A976 /* LaunchScreen.storyboard */; };
 		B386DF852220DA87007AC448 /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386DF842220DA87007AC448 /* RealmProvider.swift */; };
 		B3ACC4D9222208960094E66A /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ACC4D8222208960094E66A /* UIWindowExtension.swift */; };
+		B3ACC4DB22220C190094E66A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ACC4DA22220C190094E66A /* NavigationController.swift */; };
 		B3FA45BF2220856400DCC480 /* ToiletsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45BD2220856400DCC480 /* ToiletsController.swift */; };
 		B3FA45C02220856400DCC480 /* ToiletsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3FA45BE2220856400DCC480 /* ToiletsController.xib */; };
 		B3FA45C22220857A00DCC480 /* ToiletsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA45C12220857A00DCC480 /* ToiletsViewModel.swift */; };
@@ -133,6 +134,7 @@
 		B37E1EEB2220825C0043A976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B386DF842220DA87007AC448 /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
 		B3ACC4D8222208960094E66A /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
+		B3ACC4DA22220C190094E66A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		B3FA45BD2220856400DCC480 /* ToiletsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsController.swift; sourceTree = "<group>"; };
 		B3FA45BE2220856400DCC480 /* ToiletsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletsController.xib; sourceTree = "<group>"; };
 		B3FA45C12220857A00DCC480 /* ToiletsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsViewModel.swift; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 				B3389EA82221A305000B7CC4 /* UITableViewCellExtension.swift */,
 				B3389EAE2221A5A6000B7CC4 /* UITableViewExtension.swift */,
 				B3ACC4D8222208960094E66A /* UIWindowExtension.swift */,
+				B3ACC4DA22220C190094E66A /* NavigationController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -702,6 +705,7 @@
 				B355280B2220CA8600CE903F /* ToiletsFactory.swift in Sources */,
 				B35527E82220A3DF00CE903F /* TabbarFactory.swift in Sources */,
 				B35528042220AECC00CE903F /* RealmManager.swift in Sources */,
+				B3ACC4DB22220C190094E66A /* NavigationController.swift in Sources */,
 				B3389EA92221A305000B7CC4 /* UITableViewCellExtension.swift in Sources */,
 				B3FA45D222208EC700DCC480 /* NSObjectExtension.swift in Sources */,
 				B35528062220AEDD00CE903F /* RequestManager.swift in Sources */,

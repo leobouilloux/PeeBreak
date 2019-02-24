@@ -16,6 +16,7 @@ final class ToiletCell: RxTableViewCell {
     @IBOutlet private weak var favoriteImageView: UIImageView!
     @IBOutlet private weak var roundView: UIView!
     @IBOutlet private weak var distanceLabel: UILabel!
+    @IBOutlet private weak var chevronImageView: UIImageView!
 
     var viewModel: ToiletCellViewModelInterface?
 
@@ -56,17 +57,28 @@ private extension ToiletCell {
     // - MARK: Rx Bindings
     func setupRxBindings(with viewModel: ToiletCellViewModelInterface) {
         bindTheme()
-        bindAddress(with: viewModel)
-        bindHours(with: viewModel)
         bindDistance(with: viewModel)
         bindFavoriteImage(with: viewModel)
+        bindAddress(with: viewModel)
+        bindHours(with: viewModel)
+        bindChevronImage(with: viewModel)
     }
 
     func bindTheme() {
         themeService.rx
             .bind({ $0.backgroundColor }, to: rx.backgroundColor)
             .bind({ $0.textColor }, to: addressLabel.rx.textColor)
-            .bind({ $0.textColor }, to: favoriteImageView.rx.tintColor)
+            .bind({ $0.textColor }, to: chevronImageView.rx.tintColor)
+            .bind({ $0.yellowColor }, to: favoriteImageView.rx.tintColor)
+            .disposed(by: bag)
+    }
+
+    func bindDistance(with viewModel: ToiletCellViewModelInterface) {
+        viewModel.distance.bind(to: distanceLabel.rx.text).disposed(by: bag)
+    }
+
+    func bindFavoriteImage(with viewModel: ToiletCellViewModelInterface) {
+        viewModel.favoriteImage.bind(to: favoriteImageView.rx.image).disposed(by: bag)
     }
 
     func bindAddress(with viewModel: ToiletCellViewModelInterface) {
@@ -77,11 +89,7 @@ private extension ToiletCell {
         viewModel.hours.bind(to: hoursLabel.rx.text).disposed(by: bag)
     }
 
-    func bindDistance(with viewModel: ToiletCellViewModelInterface) {
-        viewModel.distance.bind(to: distanceLabel.rx.text).disposed(by: bag)
-    }
-
-    func bindFavoriteImage(with viewModel: ToiletCellViewModelInterface) {
-        viewModel.favoriteImage.bind(to: favoriteImageView.rx.image).disposed(by: bag)
+    func bindChevronImage(with viewModel: ToiletCellViewModelInterface) {
+        viewModel.chevronImage.bind(to: chevronImageView.rx.image).disposed(by: bag)
     }
 }

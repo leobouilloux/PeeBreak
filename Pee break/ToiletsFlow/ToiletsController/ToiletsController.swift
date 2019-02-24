@@ -77,6 +77,7 @@ extension ToiletsController: UITableViewDelegate, MKMapViewDelegate, CLLocationM
     // - MARK: Rx Bindings
     func setupRxBindings() {
         bindTheme()
+        bindTitle()
         bindMapView()
         bindTableView()
         bindRefreshControl()
@@ -85,7 +86,12 @@ extension ToiletsController: UITableViewDelegate, MKMapViewDelegate, CLLocationM
     func bindTheme() {
         themeService.rx
             .bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
+            .bind({ $0.backgroundColor }, to: tableView.rx.backgroundColor)
             .disposed(by: bag)
+    }
+
+    func bindTitle() {
+        viewModel.title.bind(to: navigationItem.rx.title).disposed(by: bag)
     }
 
     func bindMapView() {
@@ -112,6 +118,12 @@ extension ToiletsController: UITableViewDelegate, MKMapViewDelegate, CLLocationM
             })
             .disposed(by: bag)
 
+        mapView.rx.didSelectAnnotationView
+            .subscribe(onNext: { [weak self] annotation in
+                print(annotation)
+            })
+            .disposed(by: bag)
+
         viewModel.annotations.drive(mapView.rx.annotations).disposed(by: bag)
     }
 
@@ -124,6 +136,7 @@ extension ToiletsController: UITableViewDelegate, MKMapViewDelegate, CLLocationM
             .rx
             .itemSelected
             .subscribe(onNext: { [weak self] _ in
+
             })
             .disposed(by: bag)
         viewModel.dataSource
